@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $roboto;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+
+  h1 {
+    padding-top: 20px;
+  }
+}
+
+.brand-name {
+  font-family: $didact-gothic;
+}

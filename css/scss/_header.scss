@@ -1,0 +1,49 @@
+header {
+  background-color: $preto-primario;
+  height: 80px;
+  padding: 30px 0;
+
+  h2,
+  a {
+    color: $branco-primario;
+  }
+
+  a:hover {
+    color: $cinza-hover;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+nav {
+  li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  span {
+    padding-left: 5px;
+  }
+
+  a {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+}
+
+.cart ion-icon {
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.cart a {
+  background-color: $preto-secundario;
+  color: $branco-primario;
+  cursor: pointer;
+}

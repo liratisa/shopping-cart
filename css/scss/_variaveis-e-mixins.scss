@@ -1,0 +1,35 @@
+//cores
+$preto-primario: #202020;
+$preto-secundario: #333533;
+$preto-terciario: #111;
+$branco-primario: #fff;
+$cinza-hover: #d6d6d6;
+$cinza-border: #a8aea8;
+$shadow: #4b4e4b67;
+
+//fontes
+$didact-gothic: "Didact Gothic", sans-serif;
+$roboto: "Roboto", sans-serif;
+
+// variáveis do responsivo
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 767px;
+
+// mixins
+
+@mixin device($size) {
+  @if $size == desktop {
+    @media screen and (max-width: $desktop) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      @content;
+    }
+  } @else if $size == mobile {
+    @media screen and (max-width: $mobile) {
+      @content;
+    }
+  }
+}
