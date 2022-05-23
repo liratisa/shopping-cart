@@ -15,8 +15,8 @@
   box-shadow: 0px 2px 2px $shadow;
   border-radius: 5px;
 
-  h3 {
-    padding-left: 5px;
+  div {
+    padding: 15px 10px;
     font-weight: normal;
   }
 }
@@ -25,6 +25,18 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+
+  a:visited {
+    color: $branco-primario;
+  }
+
+  @include device(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include device(mobile) {
+    display: block;
+  }
 }
 
 .add-cart {
@@ -41,13 +53,11 @@
   }
 }
 
-.image:hover .cart1,
-.image:hover .cart2,
-.image:hover .cart3,
-.image:hover .cart4,
-.image:hover .cart5 {
-  bottom: 50px;
-  opacity: 1;
-  padding: 10px;
-  text-decoration: none;
+@for $i from 1 through 5 {
+  .image:hover .cart#{$i} {
+    bottom: 74px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+  }
 }
